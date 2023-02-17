@@ -2,9 +2,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #4400ffcc;
-    height: 100vh;
-    width: 100vw;
+    right:0;
+    bottom:0;
 }
 
 /* #toolbar-container{

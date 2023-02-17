@@ -25,6 +25,11 @@ const Main = () => {
       return `pixel-post-character letter-style-${randomNum}`
     }
 
+    function changeToolBarDisplay() {
+      console.log('Change Tool Bar Display :', !toolBarVisibility)
+      setToolBarVisibility(!toolBarVisibility);
+    }
+
   return (
     <div id="main">
       <Navbar />
@@ -35,9 +40,13 @@ const Main = () => {
           <Route path="/videos" element={<Videos />} />
         </Routes>
       </div>
+      {toolBarVisibility ? <Toolbar changeToolBarDisplay={changeToolBarDisplay}/> : null}
       <Footer
-        toolbarVisibility={toolBarVisibility}
-        setToolbarVisibility={setToolBarVisibility}
+        toolBarVisibility={toolBarVisibility}
+        setToolBarVisibility={setToolBarVisibility}
+        changeToolBarDisplay={
+          changeToolBarDisplay
+        }
       />
     </div>
   );

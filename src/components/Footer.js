@@ -1,16 +1,13 @@
 import React from 'react'
 import {Toolbar} from './'
 
-const Footer = ({toolbarVisibility, setToolbarVisibility}) => {
-    function changeToolbarDisplay() {
-        console.log('Change Tool Bar Display :', !toolbarVisibility)
-        setToolbarVisibility(!toolbarVisibility);
-      }
+const Footer = ({toolBarVisibility, setToolBarVisibility, changeToolBarDisplay}) => {
+   
     return (
         
         <footer id='persistent-header'>
-            {toolbarVisibility ? <Toolbar changeToolbarDisplay={changeToolbarDisplay}/> : null}
-            <button onClick={changeToolbarDisplay}>Click for Accessibility Options</button>
+            
+            <button onClick={changeToolBarDisplay}>Click for Accessibility Options</button>
         </footer>
     )
 }

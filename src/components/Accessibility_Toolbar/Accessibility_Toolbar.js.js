@@ -1,10 +1,10 @@
 import './Accessibility_Toolbar.css'
 
-const Toolbar = ({ changeToolbarDisplay}) => {
+const Toolbar = ({ changeToolBarDisplay}) => {
 
   return (
-    <div id='toolbar-container' onClick={changeToolbarDisplay}>
-      <div id='toolbar-modal-backdrop' onClick={changeToolbarDisplay}></div>
+    <div id='toolbar-container'>
+      <div id='toolbar-modal-backdrop' onClick={changeToolBarDisplay}></div>
        <div id="toolbar">
         <h2 id='accessibility-header'>Accessibility Toolbar</h2>
         <p id='increase-text'>Increase Text Size</p>
