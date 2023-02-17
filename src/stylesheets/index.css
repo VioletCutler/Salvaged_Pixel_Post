@@ -36,6 +36,11 @@
 
 /* ====== BOILER PLATE SETTINGS ====== */
 
+/* Change the root font size*/
+html {
+  font-size: 62.5%;
+}
+
 /* Box sizing rules */
 *,
 *::before,

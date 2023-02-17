@@ -4,9 +4,9 @@
 #welcome-page {
     display: flex;
     flex-wrap:wrap;
-    letter-spacing: 2rem;
-    line-height: 2rem;
-    font-size: 2rem;
+    letter-spacing: 1rem;
+    line-height: 1rem;
+    font-size: 5vw;
     background:linear-gradient(rgb(0, 0, 0), rgb(44, 44, 44));
     height: 100%;
     flex-grow: 3;

@@ -40,6 +40,8 @@ const Main = () => {
           <Route path="/videos" element={<Videos />} />
         </Routes>
       </div>
+     
+
       {toolBarVisibility ? <Toolbar changeToolBarDisplay={changeToolBarDisplay}/> : null}
       <Footer
         toolBarVisibility={toolBarVisibility}
