@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Videos, Homepage, Footer, Toolbar, Welcome } from "./";
 import { Routes, Route } from "react-router-dom";
+import '../stylesheets/index.css'
 
 const Main = () => {
   const [toolBarVisibility, setToolBarVisibility] = useState(false);

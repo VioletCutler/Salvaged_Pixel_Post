@@ -1,25 +1,5 @@
-.letter-style-1 {
-    color: green;
-}
+@import "../../stylesheets/index.css";
 
-.letter-style-2 {
-    color: yellow;
-}
-.letter-style-3 {
-    color: red;
-}
-.letter-style-4 {
-    color: orange;
-}
-.letter-style-5 {
-    color: blue;
-}
-.letter-style-6 {
-    color: purple;
-}
-.letter-style-7 {
-    color: teal;
-}
 
 #welcome-page {
     display: flex;
@@ -27,9 +7,6 @@
     letter-spacing: 2rem;
     line-height: 2rem;
     font-size: 2rem;
-}
-
-#welcome-page {
     background:linear-gradient(rgb(0, 0, 0), rgb(44, 44, 44));
     height: 100%;
     flex-grow: 3;

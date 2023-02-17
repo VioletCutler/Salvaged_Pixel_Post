@@ -3,12 +3,17 @@
   /* old color schemes 
   --background-color: #691B74;
   --card-background-color: #892BE2;
-  
   */
+  /* ========= RANDOM COLORS ======== */
+  --random-light-mode-color-1:#4A0068;
+  --random-light-mode-color-2:#027303;
+  --random-light-mode-color-3: #FF1400;
+  --random-light-mode-color-4: #EECCFF;
+  --random-light-mode-color-5: #EDE8A6;
+  --random-light-mode-color-6: #027303;
+  --random-light-mode-color-7: #ffd85a;
 
   /* ========= LIGHT MODE ========= */
-
-
 
   /* ========= DARK MODE ==========*/
   --dark-background-color: green;
@@ -299,3 +304,24 @@ h1 {
   }
 
 
+.letter-style-1 {
+    color: var(--random-light-mode-color-1);
+}
+.letter-style-2 {
+  color: var(--random-light-mode-color-2);
+}
+.letter-style-3 {
+  color: var(--random-light-mode-color-3);
+}
+.letter-style-4 {
+  color: var(--random-light-mode-color-4);
+}
+.letter-style-5 {
+  color: var(--random-light-mode-color-5);
+}
+.letter-style-6 {
+  color: var(--random-light-mode-color-6);;
+}
+.letter-style-7 {
+  color: var(--random-light-mode-color-7);
+}

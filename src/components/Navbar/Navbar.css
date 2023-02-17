@@ -1,3 +1,5 @@
+@import '../../stylesheets/';
+
 #navbar, footer{
     flex: none;
   }
@@ -61,25 +63,3 @@
     flex-wrap: no-wrap;
   }
 
-.header-letter-style-1 {
-    color: green;
-}
-
-.header-letter-style-2 {
-    color: yellow;
-}
-.header-letter-style-3 {
-    color: red;
-}
-.header-letter-style-4 {
-    color: orange;
-}
-.header-letter-style-5 {
-    color: blue;
-}
-.header-letter-style-6 {
-    color: purple;
-}
-.header-letter-style-7 {
-    color: teal;
-}

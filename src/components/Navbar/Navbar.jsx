@@ -13,7 +13,7 @@ const Navbar = () => {
   const pixelPostString = [`P`, `I`, `X`, `3`, `L`, `P`, `0`, `S`, `T`]
   function generateRandomColorClass(){
       let randomNum = Math.ceil(Math.random() * 7)
-      return `header-letter-style-${randomNum}`
+      return `letter-style-${randomNum}`
     }
 
 
