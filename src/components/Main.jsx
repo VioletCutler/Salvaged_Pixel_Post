@@ -5,6 +5,8 @@ import '../stylesheets/index.css'
 
 const Main = () => {
   const [toolBarVisibility, setToolBarVisibility] = useState(false);
+  const [theme, setTheme] = useState('light-mode')
+
 
   const pixelPostString = [`P`, `I`, `X`, `3`, `L`, `P`, `0`, `S`, `T`]
   const textToUse = []
@@ -31,10 +33,11 @@ const Main = () => {
     }
 
   return (
-    <div id="main">
+    <div id="main" className={theme}>
+      {console.log('Theme :',theme)}
       <Navbar />
-      <div id="routes">
-        <Routes>
+      <div id="routes" className={theme}>
+        <Routes className={theme}>
           <Route path="/welcome" element={<Welcome generateText={generateText} generateRandomColorClass={generateRandomColorClass}/>} />
           <Route path="/" element={<Homepage />} />
           <Route path="/videos" element={<Videos />} />
@@ -42,7 +45,8 @@ const Main = () => {
       </div>
      
 
-      {toolBarVisibility ? <Toolbar changeToolBarDisplay={changeToolBarDisplay}/> : null}
+      {toolBarVisibility ? <Toolbar changeToolBarDisplay={changeToolBarDisplay}
+      theme={theme} setTheme={setTheme}/> : null}
       <Footer
         toolBarVisibility={toolBarVisibility}
         setToolBarVisibility={setToolBarVisibility}

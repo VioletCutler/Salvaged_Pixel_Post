@@ -139,10 +139,12 @@ link {
 #app {
   margin-bottom: 0;
   height: 100%;
+
 }
 
 #main {
-  height: 100%
+  height: 100%;
+
 }
 
 #routes {
@@ -329,4 +331,10 @@ h1 {
 }
 .letter-style-7 {
   color: var(--random-light-mode-color-7);
+}
+
+.gray-scale {
+  filter: grayscale(100%);
+  background-color: grey;
+  z-index: 999;
 }

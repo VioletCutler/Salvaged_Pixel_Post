@@ -1,6 +1,10 @@
 import './Accessibility_Toolbar.css'
 
-const Toolbar = ({ changeToolBarDisplay}) => {
+const Toolbar = ({ changeToolBarDisplay, theme, setTheme }) => {
+
+    function handleGrayScale(){
+      setTheme('gray-scale')
+    }
 
   return (
     <div id='toolbar-container'>
@@ -16,7 +20,7 @@ const Toolbar = ({ changeToolBarDisplay}) => {
         <p id="negative-contrast">Negative Contrast</p>
         <button>Negative Contrast</button>
         <p id="grayscale">Grayscale</p>
-        <button>Grayscale</button>
+        <button onClick={handleGrayScale}>Grayscale</button>
       </div>
     </div>
   );
