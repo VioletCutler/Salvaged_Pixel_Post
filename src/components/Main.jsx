@@ -6,6 +6,7 @@ import '../stylesheets/index.css'
 const Main = () => {
   const [toolBarVisibility, setToolBarVisibility] = useState(false);
   const [theme, setTheme] = useState('light-mode')
+  const [fontSize, setFontSize] = useState('font-size-1')
 
 
   const pixelPostString = [`P`, `I`, `X`, `3`, `L`, `P`, `0`, `S`, `T`]
@@ -33,7 +34,7 @@ const Main = () => {
     }
 
   return (
-    <div id="main" className={theme}>
+    <div id="main" className={`${theme} ${fontSize}`}>
       {console.log('Theme :',theme)}
       <Navbar />
       <div id="routes" className={theme}>
@@ -46,7 +47,8 @@ const Main = () => {
      
 
       {toolBarVisibility ? <Toolbar changeToolBarDisplay={changeToolBarDisplay}
-      theme={theme} setTheme={setTheme}/> : null}
+      theme={theme} setTheme={setTheme}
+      fontSize={fontSize} setFontSize={setFontSize}/> : null}
       <Footer
         toolBarVisibility={toolBarVisibility}
         setToolBarVisibility={setToolBarVisibility}

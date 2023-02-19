@@ -6,6 +6,51 @@
     bottom:0;
 }
 
+#toolbar {
+    position:fixed;
+    top:30vh;
+    bottom: 5vh;
+    width:100%;
+    background-color: black;
+    border: 3px solid gold;
+    padding-left:2rem;
+    padding-right: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+#toolbar > * {
+    font-size: 3rem;
+    flex-basis: auto;
+    flex: 1;
+    justify-self:center;
+    vertical-align: center;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap:wrap;
+}
+
+
+#toolbar:nth-child(1) {
+    padding-top:4rem;
+}
+
+#toolbar:nth-child(:last-child) {
+    padding-bottom:4rem;
+}
+
+#toolbar > *:active {
+    background-color: blue;
+}
+
+#toolbar > *:focus {
+    background-color: red;
+}
+
 /* #toolbar-container{
     position:fixed;
     left: 0;
